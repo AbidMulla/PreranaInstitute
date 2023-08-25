@@ -5,12 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>PPrerana institute</title>
+  <title>Prerana institute</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
   <!-- Favicons -->
-  <link href="./assets/img/preranalogo1-removebg-preview.png" rel="icon">
-  <link href="./assets/img/" rel="apple-touch-icon">
+  <link rel="shortcut icon" href="./assets/img/preranainstituteNavbarlogo.png" type="image/x-icon">
+  <!-- <link href="/assets/img/preranainstituteNavbarlogo.png" rel="icon"> -->
+  <!-- <link href="./assets/img/" rel="apple-touch-icon"> -->
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -44,12 +45,15 @@
           <li><a class="nav-link scrollto" href="#Course">Course</a></li>
           <li><a class="nav-link scrollto" href="#FrequentlyAsked">Frequently Asked</a></li>
           <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#OurTeam">Our Team</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#OurTeam">Our Team</a></li> -->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="nav-link scrollto" href="classes.html">Notes</a></li>
-
-         <li> <a href="#" class="btn btn-sm  ms-3 px-4 py-3" data-bs-toggle="modal" data-bs-target="#kt_Change_Password">Notes</a></li>
-          
+          <li><a class="nav-link scrollto notes" id="notes" data-bs-toggle="modal" data-bs-target="#kt_Change_Password">Notes</a></li>
+          <style>
+            .notes:hover{
+              cursor: pointer;
+            }
+          </style>
+         <!-- <li> <a href="#" class="btn btn-sm  ms-3 px-4 py-3" data-bs-toggle="modal" data-bs-target="#kt_Change_Password">Notes</a></li> -->
           <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
          
         </ul>
@@ -70,9 +74,9 @@
         <div  id="kt_modal_create_app_stepper">
           <div class="flex-row-fluid py-lg-5 px-lg-15">
 
-            <form class="form w-100" action="#" method="post" onsubmit="return validateForm()">
+            <!-- <form class="form w-100" action="Notes.html" onsubmit="return validateForm()"> -->
               <h1 class="text-dark mb-3" style="text-align: center; font: 20px; font-weight: bold;">Login</h1>
-              <div class="text-gray-400 fw-semibold text-center"><a href="#" class="link-primary fw-bold" style="text-decoration: none; color: black !important;">Create an Account</a></div>
+              <!-- <div class="text-gray-400 fw-semibold text-center"><a href="#" class="link-primary fw-bold" style="text-decoration: none; color: black !important;">Create an Account</a></div> -->
             
               <!-- This is Email  -->
               <div class="fv-row mb-10">
@@ -175,43 +179,49 @@
                 </label>
               </div>
 
-              <a href="#" class="link-primary fs-6 fw-bold" style="color: black !important;">Forgot Password?</a>
+              <!-- <a href="#" class="link-primary fs-6 fw-bold" style="color: black !important;">Forgot Password?</a> -->
 
               </div>
 
               <div class="text-center mt-4">
-                <button type="submit" class="btn btn-lg  w-100 mb-5 " style="background-color: #eb5d1e;">
-                  <span class="indicator-label" style="color: white;" >Continue</span>
+                <button type="submit" class="btn btn-lg w-100 mb-5" style="background-color: #eb5d1e;">
+                    <span class="indicator-label" style="color: white;" onclick="validateForm()">Continue</span>
                 </button>
-              </div>
+            </div>
+            <div id="form-error" class="text-danger" style="text-align: center;"></div>
 
-              <div id="form-error" class="text-danger" style="text-align: center;"></div>
 
+            <!-- </form> -->
 
-            </form>
             <script>
-
+              // Function to validate the entire form
               function validateForm() {
-                // Call individual field validation functions
-                var isEmailValid = validateEmail();
-                var isPasswordValid = validatePassword();
-
-                // Check if both fields are valid
-                if (!isEmailValid || !isPasswordValid) {
-                  // Display the error message below the submit button
-                  var formError = document.getElementById('form-error');
-                  formError.textContent = 'Please fill in all required fields correctly.';
-                  return false;
-                }
-
-                // If both fields are valid, allow form submission
-                return true;
+                  var validEmail = validateEmail();
+                  var validPassword = validatePassword();
+      
+                  if (validEmail && validPassword) {
+                      var emailInput = document.getElementById('email').value;
+                      var passwordInput = document.getElementById('password').value;
+      
+                      // Check if email and password match the predefined values
+                      if (emailInput === 'institute.prerana@gmail.com' && passwordInput === 'institute.prerana@123Bangalore') {
+                        window.location.href = "Notes.html";
+                       // Allow form submission and navigate to notes.html
+                      } else {
+                          document.getElementById('form-error').textContent = 'Incorrect email or password.';
+                          return false; // Prevent form submission
+                      }
+                  } else {
+                      return false; // Prevent form submission
+                  }
               }
-            </script>
+
+          </script>
 
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </div>
@@ -258,12 +268,12 @@
               <p>
                 Our emphasis lies in fostering conceptual learning and conducting regular assessments of students.
               </p>
-              <div class="text-center text-lg-start">
+              <!-- <div class="text-center text-lg-start">
                 <a href="#  features" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
                   <span>Read More</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -426,8 +436,8 @@
                 <p>&nbsp; &nbsp; &nbsp; &nbsp;Automation</p>
                 <p>&nbsp; &nbsp; &nbsp; &nbsp;Sensor Interfaccing</p>
                 <p>&nbsp; &nbsp; &nbsp; &nbsp;Encourage to think across</p>
-                <p>&nbsp; &nbsp; &nbsp; &nbsp;multiple domains</p>
-                <p>&nbsp; &nbsp; &nbsp; &nbsp;Electronic circuitry constrution</p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp;Multiple domains</p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp;Electronic circuitry construction</p>
                 <div class="d-flex align-items-center mb-2">
                 </div>
                 
@@ -554,7 +564,7 @@
                 </h2>
                 <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
                   <div class="accordion-body">
-                    Any doubts from students will be addressed by the teachers during the session. After each session, tests and worksheets will be assigned as homework for the students. The homework will be assessed by the teachers                  </div>
+                    Any doubts from students will be addressed by the teachers during the session. After each session, tests and worksheets will be assigned as homework for the students. The homework will be assessed by the teachers</div>
                 </div>
               </div>
 
@@ -583,9 +593,9 @@
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-3">
                     If my child has not understood a concept taught in the class can the same concept be explained again?                  </button>
                 </h2>
-                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
                   <div class="accordion-body">
-                    Yes, our teachers will gladly re-teach concepts which have not been properly understood by the child                  </div>
+                    Yes, our teachers will gladly re-teach concepts which have not been properly understood by the child.                  </div>
                 </div>
               </div>
 
@@ -593,11 +603,11 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">
-                    For more Questions.
+                    For more questions.
                   </h2>
                 <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
                   <div class="accordion-body">
-                    For more information send us an email or call us
+                    For more information send us an email or call us.
                   </div>
                 </div>
               </div>
@@ -907,29 +917,29 @@
             <div class="row gy-4">
               <div class="col-md-6">
                 <div class="info-box">
-                  <i class="bi bi-geo-alt"></i>
-                  <h3>Address</h3>
+                  <i  style="color: #eb5d1e;" class="bi bi-geo-alt"></i>
+                  <h3 style="color: black;">Address</h3>
                   <p>#22, 100ft Road, 15th Cross ,<br> 4th Phase, JP Nagar, Bengaluru, Karnataka-560078, INDIA</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
-                  <i class="bi bi-telephone"></i>
-                  <h3>Call Us</h3>
+                  <i  style="color: #eb5d1e;" class="bi bi-telephone"></i>
+                  <h3 style="color: black;">Call Us</h3>
                   <p>+91 80733 65724<br></p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
-                  <i class="bi bi-envelope"></i>
-                  <h3>Email Us</h3>
+                  <i  style="color: #eb5d1e;" class="bi bi-envelope"></i>
+                  <h3 style="color: black;">Email Us</h3>
                   <p>inspire@preranainstitute.org</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
-                  <i class="bi bi-clock"></i>
-                  <h3>Open Hours</h3>
+                  <i  style="color: #eb5d1e;" class="bi bi-clock"></i>
+                  <h3 style="color: black;">Open Hours</h3>
                   <p>Monday - Saturday<br>4:00PM - 07:00PM</p>
                 </div>
               </div>
@@ -953,7 +963,7 @@
                       <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
                   </div>
                   <div class="col-md-12 text-center">
-                      <button type="submit" class="btn btn-primary">Send Message</button>
+                      <button type="submit" class="btn btn-primary" style="background-color: #eb5d1e; border: none;">Send Message</button>
                   </div>
               </div>
           </form>
@@ -976,7 +986,7 @@
           <div class="col-lg-5 col-md-12 footer-info">
             <a href="index.html" class="logo d-flex align-items-center">
               <img src="./assets/img/logo.png" alt="">
-              <span>Social Media  </span>
+              <span style="color: black;"> Social Media  </span>
             </a>
             <div class="social-links mt-3">
               <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
@@ -988,7 +998,7 @@
 
           <div class="col-lg-2 col-6 footer-links">
            
-            <h4>Useful Links</h4>
+            <h4 style="color: black;">Useful Links</h4>
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="#hero">Home</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#Whyus">Why us?</a></li>
@@ -1001,7 +1011,7 @@
           </div>
 
           <div class="col-lg-2 col-6 footer-links">
-            <h4>Our Services</h4>
+            <h4 style="color: black;">Our Services</h4>
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Acadamic Coaching</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Coding</a></li>
@@ -1012,7 +1022,7 @@
           </div>
 
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contact Us</h4>
+            <h4 style="color: black;">Contact Us</h4>
             <p>
               #22, 100ft Road, 15th Cross ,<br> 4th Phase, JP Nagar,<br> Bengaluru, Karnataka-560078, INDIA<br>
            
@@ -1028,7 +1038,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Prerana Institute</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span style="color: black;">Prerana Institute</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
               Designed by.<a href="https://ellipsonic.com/">ELLIPSONIC INDIA SOLUTIONS PVT. LTD</a>
