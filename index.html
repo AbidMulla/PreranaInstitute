@@ -9,10 +9,9 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
   <!-- Favicons -->
-  <link rel="shortcut icon" href="./assets/img/preranainstituteNavbarlogo.png" type="image/x-icon">
-  <!-- <link href="/assets/img/preranainstituteNavbarlogo.png" rel="icon"> -->
-  <!-- <link href="./assets/img/" rel="apple-touch-icon"> -->
-
+  <link href="./assets/img/favicon123.png" rel="icon">
+ 
+   
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <!-- Vendor CSS Files -->
@@ -47,37 +46,42 @@
           <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
           <!-- <li><a class="nav-link scrollto" href="#OurTeam">Our Team</a></li> -->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="nav-link scrollto notes" id="notes" data-bs-toggle="modal" data-bs-target="#kt_Change_Password">Notes</a></li>
+          <li><a class="nav-link scrollto notes" id="notes" data-bs-toggle="modal"
+              data-bs-target="#kt_Change_Password">Notes</a></li>
           <style>
-            .notes:hover{
+            .notes:hover {
               cursor: pointer;
             }
           </style>
-         <!-- <li> <a href="#" class="btn btn-sm  ms-3 px-4 py-3" data-bs-toggle="modal" data-bs-target="#kt_Change_Password">Notes</a></li> -->
+    
+          <!-- <li> <a href="#" class="btn btn-sm  ms-3 px-4 py-3" data-bs-toggle="modal" data-bs-target="#kt_Change_Password">Notes</a></li> -->
           <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
-         
+
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
     </div>
   </header>
-    
-<!-- Change Password Module  -->
-<div class="modal fade" id="kt_Change_Password" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered mw-900px">
-    <div class="modal-content" style="padding: 0px 31px;">
-      <!-- This is close button  -->
 
-      <button type="button" style="position: absolute; right: 0; padding: 20px 20px;" class="btn-close close-button" data-bs-dismiss="modal" aria-label="Close" ></button>
+  
 
-      <div class="modal-body py-lg-10 px-lg-10">
-        <div  id="kt_modal_create_app_stepper">
-          <div class="flex-row-fluid py-lg-5 px-lg-15">
+  <!-- Change Password Module  -->
+  <div class="modal fade" id="kt_Change_Password" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered mw-900px">
+      <div class="modal-content" style="padding: 0px 31px;">
+        <!-- This is close button  -->
 
-            <!-- <form class="form w-100" action="Notes.html" onsubmit="return validateForm()"> -->
+        <button type="button" style="position: absolute; right: 0; padding: 20px 20px;" class="btn-close close-button"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+
+        <div class="modal-body py-lg-10 px-lg-10">
+          <div id="kt_modal_create_app_stepper">
+            <div class="flex-row-fluid py-lg-5 px-lg-15">
+
+              <!-- <form class="form w-100" action="Notes.html" onsubmit="return validateForm()"> -->
               <h1 class="text-dark mb-3" style="text-align: center; font: 20px; font-weight: bold;">Login</h1>
               <!-- <div class="text-gray-400 fw-semibold text-center"><a href="#" class="link-primary fw-bold" style="text-decoration: none; color: black !important;">Create an Account</a></div> -->
-            
+
               <!-- This is Email  -->
               <div class="fv-row mb-10">
                 <label class="form-label fs-6 fw-bold text-dark">Email</label>
@@ -121,8 +125,8 @@
                   <label class="form-label fw-bold text-dark fs-6 mb-0">Password</label>
 
                 </div>
-                <input class="form-control form-control-lg form-control-solid" type="password" id="password" name="password"
-                  autocomplete="off" />
+                <input class="form-control form-control-lg form-control-solid" type="password" id="password"
+                  name="password" autocomplete="off" />
                 <!-- Validation Error Message -->
                 <div id="password-error" class="text-danger mt-2"></div>
               </div>
@@ -171,60 +175,61 @@
               </script>
 
               <div style="display: flex; justify-content: space-between;">
-                
-              <div class="fv-row mb-10">
-                <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault" onclick="myFunction()">
-                <label class="form-check-label text-gray-600" for="flexCheckDefault">
-                  show Password
-                </label>
-              </div>
 
-              <!-- <a href="#" class="link-primary fs-6 fw-bold" style="color: black !important;">Forgot Password?</a> -->
+                <div class="fv-row mb-10">
+                  <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault"
+                    onclick="myFunction()">
+                  <label class="form-check-label text-gray-600" for="flexCheckDefault">
+                    Show Password
+                  </label>
+                </div>
+
+                <!-- <a href="#" class="link-primary fs-6 fw-bold" style="color: black !important;">Forgot Password?</a> -->
 
               </div>
 
               <div class="text-center mt-4">
                 <button type="submit" class="btn btn-lg w-100 mb-5" style="background-color: #eb5d1e;">
-                    <span class="indicator-label" style="color: white;" onclick="validateForm()">Continue</span>
+                  <span class="indicator-label" style="color: white;" onclick="validateForm()">Continue</span>
                 </button>
-            </div>
-            <div id="form-error" class="text-danger" style="text-align: center;"></div>
+              </div>
+              <div id="form-error" class="text-danger" style="text-align: center;"></div>
 
 
-            <!-- </form> -->
+              <!-- </form> -->
 
-            <script>
-              // Function to validate the entire form
-              function validateForm() {
+              <script>
+                // Function to validate the entire form
+                function validateForm() {
                   var validEmail = validateEmail();
                   var validPassword = validatePassword();
-      
+
                   if (validEmail && validPassword) {
-                      var emailInput = document.getElementById('email').value;
-                      var passwordInput = document.getElementById('password').value;
-      
-                      // Check if email and password match the predefined values
-                      if (emailInput === 'institute.prerana@gmail.com' && passwordInput === 'institute.prerana@123Bangalore') {
-                        window.location.href = "Notes.html";
-                       // Allow form submission and navigate to notes.html
-                      } else {
-                          document.getElementById('form-error').textContent = 'Incorrect email or password.';
-                          return false; // Prevent form submission
-                      }
-                  } else {
+                    var emailInput = document.getElementById('email').value;
+                    var passwordInput = document.getElementById('password').value;
+
+                    // Check if email and password match the predefined values
+                    if (emailInput === 'institute.prerana@gmail.com' && passwordInput === 'institute.prerana@123Bangalore') {
+                      window.location.href = "Notes.html";
+                      // Allow form submission and navigate to notes.html
+                    } else {
+                      document.getElementById('form-error').textContent = 'Incorrect email or password.';
                       return false; // Prevent form submission
+                    }
+                  } else {
+                    return false; // Prevent form submission
                   }
-              }
+                }
 
-          </script>
+              </script>
 
+            </div>
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
-</div>
 
   <!-- This is LandingPage -->
   <section id="hero" class="hero d-flex align-items-center">
@@ -254,7 +259,7 @@
   </section>
 
   <main id="main">
-  
+
     <!-- This is First Section  -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
@@ -262,7 +267,7 @@
 
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
             <div class="content">
-             
+
               <h2>FROM 7th To PUC SCIENCE & COMMERCE.</h2>
               <h3>CBSE/ICSE/STATE/IGCSE</h3>
               <p>
@@ -285,9 +290,9 @@
     </section>
 
     <!-- Why us?  -->
-    <section id="features" class="features" >
+    <section id="features" class="features">
 
-      <div class="container" data-aos="fade-up" id="Whyus" >
+      <div class="container" data-aos="fade-up" id="Whyus">
 
         <header class="section-header">
           <h2>Features</h2>
@@ -348,7 +353,7 @@
               <div style="font-weight: bold;" class="col-md-12 icon-box text-center" data-aos="fade-up">
                 <!-- <i class="ri-line-chart-line"></i> -->
                 <div>
-                  <h4  style="font-weight: bold; align-items: center; color: #eb5d1e;">We Also Offer</h4>
+                  <h4 style="font-weight: bold; align-items: center; color: #eb5d1e;">We Also Offer</h4>
                 </div>
               </div>
 
@@ -380,7 +385,8 @@
 
         <div class="row feture-tabs" data-aos="fade-up">
           <div class="col-lg-6">
-            <h3>We offer coding classes for kids that are self-paced and tailored to match each child's unique learning style.</h3>
+            <h3>We offer coding classes for kids that are self-paced and tailored to match each child's unique learning
+              style.</h3>
 
             <!-- Tabs -->
             <ul class="nav nav-pills mb-3">
@@ -401,9 +407,9 @@
                   <h4>C programming language</h4>
                 </div>
                 <div class="d-flex align-items-center mb-2">
-                  <i class="bi bi-check2" style="color: #eb5d1e;" ></i>
+                  <i class="bi bi-check2" style="color: #eb5d1e;"></i>
                   <h4>C ++</h4>
-                </div>  
+                </div>
                 <div class="d-flex align-items-center mb-2">
                   <i class="bi bi-check2" style="color: #eb5d1e;"></i>
                   <h4>HTML (HyperText Markup Language)</h4>
@@ -440,7 +446,7 @@
                 <p>&nbsp; &nbsp; &nbsp; &nbsp;Electronic circuitry construction</p>
                 <div class="d-flex align-items-center mb-2">
                 </div>
-                
+
 
               </div><!-- End Tab 2 Content -->
 
@@ -460,90 +466,96 @@
     <!-- This is Courses -->
     <section id="testimonials" class="testimonials">
 
-        <div class="container" data-aos="fade-up" id="Course">
-          <header class="section-header">
-            <!-- <h2>Testimonials</h2> -->
-            <p>Most Popular Courses</p>
-          </header>
-  
-          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
-            <div class="swiper-wrapper">
-              
-              <!-- First  -->
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    All the way from basic art techniques, to complex 2D & 3D masterpieces.</p>
-                    <h3>Art Classes</h3>
-                  <div class="profile mt-auto">
-                    <!-- <img src="./assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt=""> -->
-                    <!-- <h4>Designer</h4> -->
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Second  -->
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                    <p>
-                      Intense strategies and skills designed with an emphasis on increased reading comprehension and vocabulary acquisition.                    </p>
-                    <h3>Reading Classes</h3>
-                  <div class="profile mt-auto">
-                    <!-- <img src="./assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt=""> -->
-                    <!-- <h4>Store Owner</h4> -->
-                  </div>
-                </div>
-              </div>
-  
-              <!-- third  -->
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    Learn how to process and internalize information in a highly-effective way, and how to apply this to acquire other skills.
-                  </p>
-                  <h3>Memory Training</h3>
-                  <div class="profile mt-auto">
-                    <!-- <img src="./assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt=""> -->
-                    <!-- <h4>Freelancer</h4> -->
-                  </div>
-                </div>
-              </div>
-  
-              <!-- Four  -->
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    Traditional way of Veda Chanting using the web-based technology in this modern era.                  </p>
-                  <h3>Veda Classes</h3>
-                  <div class="profile mt-auto">
-                    <!-- <img src="./assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt=""> -->
-                    <!-- <h4>Entrepreneur</h4> -->
-                  </div>
-                </div>
+      <div class="container" data-aos="fade-up" id="Course">
+        <header class="section-header">
+          <!-- <h2>Testimonials</h2> -->
+          <p>Most Popular Courses</p>
+        </header>
 
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
+          <div class="swiper-wrapper">
+
+            <!-- First  -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  All the way from basic art techniques, to complex 2D & 3D masterpieces.</p>
+                <h3>Art Classes</h3>
+                <div class="profile mt-auto">
+                  <!-- <img src="./assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt=""> -->
+                  <!-- <h4>Designer</h4> -->
+                </div>
               </div>
-  
             </div>
-            <div class="swiper-pagination"></div>
-          </div>
-  
-        </div>
-  
-     </section>
 
-      <!-- Frequently asked Questions -->
+            <!-- Second  -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Intense strategies and skills designed with an emphasis on increased reading comprehension and
+                  vocabulary acquisition. </p>
+                <h3>Reading Classes</h3>
+                <div class="profile mt-auto">
+                  <!-- <img src="./assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt=""> -->
+                  <!-- <h4>Store Owner</h4> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- third  -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Learn how to process and internalize information in a highly-effective way, and how to apply this to
+                  acquire other skills.
+                </p>
+                <h3>Memory Training</h3>
+                <div class="profile mt-auto">
+                  <!-- <img src="./assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt=""> -->
+                  <!-- <h4>Freelancer</h4> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Four  -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Traditional way of Veda Chanting using the web-based technology in this modern era. </p>
+                <h3>Veda Classes</h3>
+                <div class="profile mt-auto">
+                  <!-- <img src="./assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt=""> -->
+                  <!-- <h4>Entrepreneur</h4> -->
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Frequently asked Questions -->
     <section id="faq" class="faq">
 
       <div class="container" data-aos="fade-up" id="FrequentlyAsked">
@@ -559,27 +571,31 @@
             <div class="accordion accordion-flush" id="faqlist1">
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
-                    Will the teachers also help with school homework?                  </button>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-1">
+                    Will the teachers also help with school homework? </button>
                 </h2>
                 <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
                   <div class="accordion-body">
-                    Any doubts from students will be addressed by the teachers during the session. After each session, tests and worksheets will be assigned as homework for the students. The homework will be assessed by the teachers</div>
+                    Any doubts from students will be addressed by the teachers during the session. After each session,
+                    tests and worksheets will be assigned as homework for the students. The homework will be assessed by
+                    the teachers</div>
                 </div>
               </div>
 
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
-                    Do you give homework?                  </button>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-2">
+                    Do you give homework? </button>
                 </h2>
                 <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
                   <div class="accordion-body">
-                    Yes, homework will be provided after every class.                  </div>
+                    Yes, homework will be provided after every class. </div>
                 </div>
               </div>
 
-              
+
             </div>
           </div>
 
@@ -590,21 +606,25 @@
 
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-3">
-                    If my child has not understood a concept taught in the class can the same concept be explained again?                  </button>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq2-content-3">
+                    If my child has not understood a concept taught in the class can the same concept be explained
+                    again? </button>
                 </h2>
                 <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
                   <div class="accordion-body">
-                    Yes, our teachers will gladly re-teach concepts which have not been properly understood by the child.                  </div>
+                    Yes, our teachers will gladly re-teach concepts which have not been properly understood by the
+                    child. </div>
                 </div>
               </div>
 
 
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq2-content-1">
                     For more questions.
-                  </h2>
+                </h2>
                 <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
                   <div class="accordion-body">
                     For more information send us an email or call us.
@@ -626,14 +646,14 @@
     <!-- This is  certificates -->
     <section id="counts" class="counts">
       <header class="section-header">
-    
+
         <p>There are certificates for all the courses.</p>
       </header>
       <div class="container" data-aos="fade-up">
-    
-    
+
+
         <div class="row gy-4">
-    
+
           <div class="col-lg-4 col-md-6">
             <div class="count-box">
               <i class="bi bi-emoji-smile"></i>
@@ -644,7 +664,7 @@
               </div>
             </div>
           </div>
-    
+
           <div class="col-lg-4 col-md-6">
             <div class="count-box">
               <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i>
@@ -655,7 +675,7 @@
               </div>
             </div>
           </div>
-    
+
           <div class="col-lg-4 col-md-6">
             <div class="count-box">
               <i class="bi bi-headset" style="color: #15be56;"></i>
@@ -667,12 +687,12 @@
             </div>
           </div>
         </div>
-    
+
       </div>
     </section>
 
-     <!-- This is fortfolio  -->
-     <section id="portfolio" class="portfolio">
+    <!-- This is fortfolio  -->
+    <section id="portfolio" class="portfolio">
 
       <div class="container" data-aos="fade-up">
 
@@ -700,8 +720,9 @@
               <div class="portfolio-info">
                 <!-- <h4>App 1</h4>
                 <p>App</p> -->
-                  <div class="portfolio-links">
-                  <a href="./assets/img/portfolio/art-1.jpeg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                <div class="portfolio-links">
+                  <a href="./assets/img/portfolio/art-1.jpeg" data-gallery="portfolioGallery" class="portfokio-lightbox"
+                    ><i class="bi bi-plus"></i></a>
                   <!-- <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a> -->
                 </div>
               </div>
@@ -712,84 +733,89 @@
             <div class="portfolio-wrap">
               <img src="./assets/img/portfolio/pic-2.jpeg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
+                <!-- <h4>Card 1</h4>
+                <p>Card</p> -->
                 <div class="portfolio-links">
-                  <a href="./assets/img/portfolio/pic-2.jpeg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 1"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-       
-        
-
-                     <!-- This is app  -->
-        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="./assets/img/portfolio/art-2.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <!-- <h4>App 1</h4>
-                <p>App</p> -->
-                <div class="portfolio-links">
-                  <a href="./assets/img/portfolio/art-2.jpeg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                  <a href="./assets/img/portfolio/pic-2.jpeg" data-gallery="portfolioGallery" class="portfokio-lightbox"
+                    ><i class="bi bi-plus"></i></a>
                   <!-- <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a> -->
                 </div>
               </div>
             </div>
           </div>
 
-         
 
-           <!-- This is app  -->
-        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="./assets/img/portfolio/art-3.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <!-- <h4>App 1</h4>
+
+
+          <!-- This is app  -->
+          <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="./assets/img/portfolio/art-2.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <!-- <h4>App 1</h4>
                 <p>App</p> -->
-                <div class="portfolio-links">
-                  <a href="./assets/img/portfolio/art-3.jpeg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a> -->
+                  <div class="portfolio-links">
+                    <a href="./assets/img/portfolio/art-2.jpeg" data-gallery="portfolioGallery"
+                      class="portfokio-lightbox" ><i class="bi bi-plus"></i></a>
+                    <!-- <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a> -->
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-           
-          <!-- This is Cards  -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="./assets/img/portfolio/pic-1.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="./assets/img/portfolio/pic-2.jpeg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 1"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="./assets/img/portfolio/pic-3.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="./assets/img/portfolio/pic-3.jpeg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 1"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+
+
+            <!-- This is app  -->
+            <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                  <img src="./assets/img/portfolio/art-3.jpeg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <!-- <h4>App 1</h4>
+                <p>App</p> -->
+                    <div class="portfolio-links">
+                      <a href="./assets/img/portfolio/art-3.jpeg" data-gallery="portfolioGallery"
+                        class="portfokio-lightbox"><i class="bi bi-plus"></i></a>
+                      <!-- <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a> -->
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <!-- web  -->
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <!-- This is Cards  -->
+              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                  <img src="./assets/img/portfolio/pic-1.jpeg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <!-- <h4>Card 1</h4>
+                    <p>Card</p> -->
+                    <div class="portfolio-links">
+                      <a href="./assets/img/portfolio/pic-1.jpeg" data-gallery="portfolioGallery"
+                        class="portfokio-lightbox" ><i class="bi bi-plus"></i></a>
+                      <!-- <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                  <img src="./assets/img/portfolio/pic-3.jpeg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <!-- <h4>Card 1</h4>
+                    <p>Card</p> -->
+                    <div class="portfolio-links">
+                      <a href="./assets/img/portfolio/pic-3.jpeg" data-gallery="portfolioGallery"
+                        class="portfokio-lightbox" ><i class="bi bi-plus"></i></a>
+                      <!-- <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- web  -->
+              <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="./assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -803,15 +829,16 @@
             </div>
           </div> -->
 
-         
-        </div>
 
-      </div>
+            </div>
+
+          </div>
+        </div>
 
     </section>
 
 
-     <!-- This is Our team  -->
+    <!-- This is Our team  -->
     <!-- <section id="team" class="team">
 
       <div class="container" data-aos="fade-up" id="OurTeam">
@@ -917,28 +944,28 @@
             <div class="row gy-4">
               <div class="col-md-6">
                 <div class="info-box">
-                  <i  style="color: #eb5d1e;" class="bi bi-geo-alt"></i>
+                  <i style="color: #eb5d1e;" class="bi bi-geo-alt"></i>
                   <h3 style="color: black;">Address</h3>
                   <p>#22, 100ft Road, 15th Cross ,<br> 4th Phase, JP Nagar, Bengaluru, Karnataka-560078, INDIA</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
-                  <i  style="color: #eb5d1e;" class="bi bi-telephone"></i>
+                  <i style="color: #eb5d1e;" class="bi bi-telephone"></i>
                   <h3 style="color: black;">Call Us</h3>
                   <p>+91 80733 65724<br></p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
-                  <i  style="color: #eb5d1e;" class="bi bi-envelope"></i>
+                  <i style="color: #eb5d1e;" class="bi bi-envelope"></i>
                   <h3 style="color: black;">Email Us</h3>
                   <p>inspire@preranainstitute.org</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
-                  <i  style="color: #eb5d1e;" class="bi bi-clock"></i>
+                  <i style="color: #eb5d1e;" class="bi bi-clock"></i>
                   <h3 style="color: black;">Open Hours</h3>
                   <p>Monday - Saturday<br>4:00PM - 07:00PM</p>
                 </div>
@@ -948,26 +975,27 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="https://formsubmit.co/institute.prerana@gmail.com" method="post" > 
+            <form action="https://formsubmit.co/institute.prerana@gmail.com" method="post">
               <div class="row gy-4">
-                  <div class="col-md-6">
-                      <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                  </div>
-                  <div class="col-md-6">
-                      <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                  </div>
-                  <div class="col-md-12">
-                      <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-                  </div>
-                  <div class="col-md-12">
-                      <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                  </div>
-                  <div class="col-md-12 text-center">
-                      <button type="submit" class="btn btn-primary" style="background-color: #eb5d1e; border: none;">Send Message</button>
-                  </div>
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                  <button type="submit" class="btn btn-primary" style="background-color: #eb5d1e; border: none;">Send
+                    Message</button>
+                </div>
               </div>
-          </form>
-          
+            </form>
+
           </div>
 
         </div>
@@ -980,24 +1008,25 @@
 
   <!-- This is footer  -->
   <footer id="footer" class="footer">
-     <div class="footer-top">
+    <div class="footer-top">
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
             <a href="index.html" class="logo d-flex align-items-center">
               <img src="./assets/img/logo.png" alt="">
-              <span style="color: black;"> Social Media  </span>
+              <span style="color: black;"> Social Media </span>
             </a>
             <div class="social-links mt-3">
               <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
               <!-- <a href="#" class="facebook"><i class="bi bi-facebook"></i></a> -->
-              <a href="https://www.instagram.com/prerana.institute/" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.instagram.com/prerana.institute/" class="instagram"><i
+                  class="bi bi-instagram"></i></a>
               <!-- <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
             </div>
           </div>
 
           <div class="col-lg-2 col-6 footer-links">
-           
+
             <h4 style="color: black;">Useful Links</h4>
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="#hero">Home</a></li>
@@ -1025,7 +1054,7 @@
             <h4 style="color: black;">Contact Us</h4>
             <p>
               #22, 100ft Road, 15th Cross ,<br> 4th Phase, JP Nagar,<br> Bengaluru, Karnataka-560078, INDIA<br>
-           
+
               <strong>Phone:</strong> +91 80733 65724 <br>
               <strong>Email:</strong> inspire@preranainstitute.org<br>
             </p>
@@ -1041,12 +1070,13 @@
         &copy; Copyright <strong><span style="color: black;">Prerana Institute</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-              Designed by.<a href="https://ellipsonic.com/">ELLIPSONIC INDIA SOLUTIONS PVT. LTD</a>
+        Designed by.<a href="https://ellipsonic.com/">ELLIPSONIC INDIA SOLUTIONS PVT. LTD</a>
       </div>
     </div>
 
   </footer>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="./assets/vendor/purecounter/purecounter_vanilla.js"></script>

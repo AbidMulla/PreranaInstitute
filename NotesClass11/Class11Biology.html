@@ -10,8 +10,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="/assets/img/favicon.png" rel="icon">
-    <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="/assets/img/favicon123.png" rel="icon">
+
 
     <!-- Google Fonts -->
     <link
@@ -255,7 +255,7 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="getstarted scrollto" href="#">Log Out</a></li>
+                    <li><a class="getstarted scrollto" href="/index.html">Log Out</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
@@ -378,16 +378,96 @@
         document.addEventListener("DOMContentLoaded", function () {
             console.log("DOM Content Loaded")
             const testLessons = [
-                { title: "Lesson 1: The Rise of Nationalism in Europe", desc: "Exploring the historical rise of nationalism in Europe.", link: "https://prerana-app.s3.ap-south-1.amazonaws.com/resources/social_10th/Chapter+1+The+Rise+of+Nationalism+in+Europe.pdf" },
-                { title: "Lesson 2: The Nationalist Movement in Indo-China", desc: "Examining the nationalist movement in Indo-China and its impact.", link: "https://prerana-app.s3.ap-south-1.amazonaws.com/resources/social_10th/Chapter+2+The+Nationalist+Movement+in+Indo-China.pdf" },
-                { title: "Lesson 3: Nationalism in India", desc: "Investigating the development of nationalism in India and its historical significance.", link: "https://prerana-app.s3.ap-south-1.amazonaws.com/resources/social_10th/Chapter+3+Nationalism+in+India.pdf" },
-                { title: "Lesson 4: The Making of Global World", desc: "Understanding the processes and factors that contributed to the emergence of a globalized world.", link: "https://prerana-app.s3.ap-south-1.amazonaws.com/resources/social_10th/Chapter+4+The+Making+of+Global+World.pdf" },
-                { title: "Lesson 5: The Age of Industrialisation", desc: "Analyzing the impact of industrialization on societies and economies.", link: "https://prerana-app.s3.ap-south-1.amazonaws.com/resources/social_10th/Chapter+5+The+Age+of+Industrialisation.pdf" },
-                { title: "Lesson 6: Work, Life and Leisure", desc: "Exploring the changing dynamics of work, lifestyle, and leisure activities in different historical contexts.", link: "https://prerana-app.s3.ap-south-1.amazonaws.com/resources/social_10th/Chapter+6+Work%2C+Life+and+Leisure.pdf" },
-                { title: "Lesson 7: Print Culture and the Modern World", desc: "Examining the influence of print culture on the shaping of the modern world.", link: "https://prerana-app.s3.ap-south-1.amazonaws.com/resources/social_10th/Chapter+7+Print+Culture+and+the+Modern+World.pdf" },
-                { title: "Lesson 8: Novels, Society and History", desc: "Investigating the role of novels in reflecting and shaping society and history.", link: "https://prerana-app.s3.ap-south-1.amazonaws.com/resources/social_10th/Chapter+8+Novels%2C+Society+and+History.pdf" }
-                
-                // Add more test lessons here...
+                {
+                    title: 'Lesson 01 : THE LIVING WORLD',
+                    desc: 'Introduction to the diversity and classification of living organisms.',
+                    link: '',
+                },
+                {
+                    title: 'Lesson 02 : Biological Classification',
+                    desc: 'Exploring the classification and nomenclature of living organisms.',
+                    link: '',
+                },
+                {
+                    title: 'Lesson 03 : ANIMAL KINGDOM',
+                    desc: 'Understanding the classification and characteristics of animals.',
+                    link: '',
+                },
+                {
+                    title: 'Lesson 04 : MORPHOLOGY OF FLOWERING PLANTS',
+                    desc: 'Studying the external features and internal structures of flowering plants.',
+                    link: '',
+                },
+                {
+                    title: 'Lesson 05 : ANATOMY OF FLOWERING PLANTS',
+                    desc: 'Exploring the internal tissues and organs of flowering plants.',
+                    link: '',
+                },
+                {
+                    title: 'Lesson 06 : Structural Organisation in Animals',
+                    desc: 'Understanding the structural organization and body plans of animals.',
+                    link: '',
+                },
+                {
+                    title: 'Lesson 07 : Cell: The Unit of Life',
+                    desc: 'Exploring the structure and functions of cells.',
+                    link: '',
+                },
+                {
+                    title: 'Lesson 08 : Biomolecules',
+                    desc: 'Studying the various types and functions of biomolecules.',
+                    link: '',
+                },
+                {
+                    title: 'Lesson 09 : Transport in Plants',
+                    desc: 'Understanding the transport of water, minerals, and nutrients in plants.',
+                    link: '',
+                },
+                {
+                    title: 'Lesson 10 : Mineral Nutrition',
+                    desc: 'Exploring the role of minerals in plant nutrition.',
+                    link: '',
+                },
+                {
+                    title: 'Lesson 11 : Respiration in Plants',
+                    desc: 'Studying the process of respiration in plants and its significance.',
+                    link: '',
+                },
+                {
+                    title: 'Lesson 12 : Plant Growth and Development',
+                    desc: 'Understanding the growth and development of plants.',
+                    link: '',
+                },
+                {
+                    title: 'Lesson 13 : Digestion and Absorption',
+                    desc: 'Exploring the process of digestion and absorption in the human body.',
+                    link: '',
+                },
+                {
+                    title: 'Lesson 14 : Breathing and Exchange of Gases',
+                    desc: 'Studying the respiratory system and the exchange of gases in humans.',
+                    link: '',
+                },
+                {
+                    title: 'Lesson 15 : Body Fluids and Circulation',
+                    desc: 'Understanding the circulatory system and the transport of fluids in the body.',
+                    link: '',
+                },
+                {
+                    title: 'Lesson 16 : Locomotion and Movement',
+                    desc: 'Exploring the skeletal and muscular systems and their role in movement.',
+                    link: '',
+                },
+                {
+                    title: 'Lesson 17 : Neural Control and Coordination',
+                    desc: 'Studying the nervous system and its role in coordination and control.',
+                    link: '',
+                },
+                {
+                    title: 'Lesson 18 : Chemical Coordination and Integration',
+                    desc: 'Understanding the endocrine system and the coordination of chemical signals.',
+                    link: '',
+                },
             ];
 
             const lessonsContainer = document.getElementById("lessonsContainer");
@@ -396,7 +476,7 @@
                 const lessonCard = document.createElement("div");
                 lessonCard.className = "ag-courses_item";
                 lessonCard.innerHTML = `
-                    <a href="${lesson.link}" class="ag-courses-item_link">
+                    <a href="${lesson.link}" class="ag-courses-item_link" target = "_blank">
                         <div class="ag-courses-item_title">${lesson.title}</div>
                         <p>${lesson.desc}</p>
                     </a>
